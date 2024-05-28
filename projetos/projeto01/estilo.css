@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline:0;
+
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+.cabecalho{
+    background-color: #181818;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+
+.lista {
+    display: flex;
+    list-style: none;
+    color: white;
+    margin-left: 30px;
+    
+}
+
+.lista a {
+    color: #ddd;
+    padding: 7px;
+    text-decoration: none;
+    margin-right: 30px;
+    
+}
+
+.lista a:hover{
+    color: white;
+}
+
+section.corpo{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-image: url(../projeto01/images/programador.png);
+    height: calc(100vh - 80px);
+    padding-left: 10%;
+    
+    
+    
+}
+
+section.corpo h1{
+    font-size: 54px;
+    color: white;
+
+    
+}
+
+section.corpo p  {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: blue;
+    font-size: 24px;
+    font-style: italic;
+    
+}
+
+button.acao{
+    border: 0;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 2px;
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
