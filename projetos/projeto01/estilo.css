@@ -23,6 +23,9 @@ body{
     display: flex;
     justify-content: end;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 9;
 
 }
 
@@ -83,4 +86,115 @@ button.acao{
     padding: 5px;
     font-weight: bold;
     cursor: pointer;
+    transition: 0.9s;
+}
+
+button.acao:hover{
+    transform: scale(1.1);
+}
+
+.sobre{
+    background-color: #ffffff;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+   
+}
+
+.sobre img{
+    max-width: 67%;
+    border-radius: 8px;
+}
+
+.sobre div {
+    max-width: 50%;
+    padding-right: 40px;
+}
+
+.sobre div h2{
+    font-size: 32px;
+    margin-bottom: 14px;
+}
+
+.projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projetos h2{
+    font-size: 32px;
+
+}
+
+.projetos p{
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.lista-projetos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.lista-projetos img{
+    max-width: 22%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    opacity: 0.8;
+    transition: 0.9s;
+}
+
+.lista-projetos img:hover{
+    opacity: 1;
+}
+
+.orcamento{
+    border: 0;
+    background-color: #181818;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 18px;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #181818;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding:60px 60px ;
+    margin-top: 25px;
+    color: white;
+}
+
+footer h3 a{
+    color: white;
+    text-decoration: none;
+   
+}
+
+footer h3{
+    margin-right: 15px;
+}
+
+.rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
