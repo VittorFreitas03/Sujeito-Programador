@@ -14,6 +14,9 @@ body{
     font-style: normal;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 
 .cabecalho{
@@ -89,6 +92,12 @@ button.acao{
     transition: 0.9s;
 }
 
+button.acao a{
+    text-decoration: none;
+    color: black;
+}
+
+
 button.acao:hover{
     transform: scale(1.1);
 }
@@ -148,13 +157,14 @@ button.acao:hover{
 }
 
 .lista-projetos img{
-    max-width: 22%;
+    width:  22%;
     margin-left: 0.5%;
     margin-right: 0.5%;
     margin-top: 0.5%;
     margin-bottom: 0.5%;
     opacity: 0.8;
     transition: 0.9s;
+    border-radius: 5px;
 }
 
 .lista-projetos img:hover{
@@ -197,4 +207,37 @@ footer h3{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/*responsividade*/
+
+@media (max-width: 1050px){
+
+    .sobre{
+        flex-direction: column;
+        padding-top: 80px;
+        padding-left: 0;
+        padding-right: 0px;
+    }
+
+    .sobre div h2{
+        font-size: 45px;
+
+    }
+
+    .sobre img{
+        width: 80%;
+        margin-top: 30px;
+    }
+
+    .lista-projetos img{
+        width: 28%;
+    }
+
+    .rodape{
+        flex-direction: column;
+        margin: 0;
+       
+    }
+
 }
